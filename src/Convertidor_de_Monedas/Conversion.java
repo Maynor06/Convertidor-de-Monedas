@@ -1,6 +1,7 @@
 package Convertidor_de_Monedas;
 
 import java.awt.Color;
+import java.awt.Component;
 
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
@@ -23,8 +24,12 @@ public class Conversion  extends JFrame {
 		JPanel panel = new JPanel(); //creación del panel
 		
 		//panel.setBackground(Color.BLUE);
-		this.getContentPane().add(panel); //añadimos el panel a la ventana.  
+		this.getContentPane().add(panel); //añadimos el panel a la ventana.    
 		
+		String menu = (JOptionPane.showInputDialog(null, "Seleccione lo que quiera hacer: ", "menu", JOptionPane.PLAIN_MESSAGE, null, 
+				new Object [] {"Convertir quetzales", "COnvertir grados"}, "Selecciona")).toString();
+		
+		panel.addPropertyChangeListener(menu, null);
 	}
 	private void contenido() {
 
