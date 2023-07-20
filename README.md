@@ -1,6 +1,6 @@
 # Convertidor-de-Monedas
 <h1 align="center">Conversor de Monedas y temperatura</h1>
-<img src="https://github.com/Maynor06/Convertidor-de-Monedas/assets/134113042/51b98aa1-1c7a-4a4b-b8bf-f072ccf0661a">
+<img src="https://github.com/Maynor06/Convertidor-de-Monedas/assets/134113042/51b98aa1-1c7a-4a4b-b8bf-f072ccf0661a" align="center">
 
 <h4 align="center">:construction: Proyecto en construcción :construction:</h4>
 
