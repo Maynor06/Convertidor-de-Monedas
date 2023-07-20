@@ -1,6 +1,7 @@
 # Convertidor-de-Monedas
 <h1 align="center">Conversor de Monedas y temperatura</h1>
-![conversor de una moneda a otra](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.amazon.com.mx%2FDDelafuente-Conversor-de-Divisas%2Fdp%2FB07MZ7H4KC&psig=AOvVaw34s2BxMb7XlCXA7okaH7WG&ust=1689905014910000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCID2iu-YnIADFQAAAAAdAAAAABAJ)
+![conversor de manedas](https://github.com/Maynor06/Convertidor-de-Monedas/assets/134113042/1b2fe4e1-cbea-4c72-b041-e55c85584dab)
+aynor\Downloads)
 
 <h4 align="center">:construction: Proyecto en construcción :construction:</h4>
 
