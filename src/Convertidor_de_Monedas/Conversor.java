@@ -4,11 +4,24 @@ import javax.swing.JOptionPane;
 
 public class Conversor {
 
-	Conversor(){
+	/**
+	 * definiendo nuestro constructor.
+	 * 
+	 * llamando al metodo ciclo para que cada vez que construyan la clase ya no 
+	 * tengan necesidad de llamar a todos los metodos para que funcione nuestra aplicación
+	 */
+	Conversor(){  
 		ciclo(); 
 		
 			
 	}
+	
+	/**
+	 * Creamos el metodo menu donde le mostramos las opciones que tenemos para hacer conversiones se lo mostramos con el uso de la
+	 * clase JOptionPane y sus metodos.
+	 * este metodo tambien realiza una validacion para saber que quiere hacer el usuario ya que si quiere convertir monedas este llama 
+	 * al metodo conQutzales y si quiere convertir temperatura entonces llama al metodo grados. 
+	 */
 	
 	private void menu() {
 		String menu = (JOptionPane.showInputDialog(null, "Seleccione lo que quiera hacer: ", "menu", JOptionPane.PLAIN_MESSAGE, null, 
@@ -20,15 +33,22 @@ public class Conversor {
 			grados(); 
 		}
 	}
+	
+	/**
+	 * en este metodo es donde se evalua que clase de grado se quiere convertir y en base a la conversion que desee hacer realiza una 
+	 * determinada operacion. 
+	 */
+	
 	private void grados() {
 		double resultado = 0; 
 		double valorGrados = 0;
 		
-		try {
-			String validar = JOptionPane.showInputDialog("Digite los grados que desea convertir"); 
-			valorGrados = Integer.parseInt(validar); 	
-		}catch(NumberFormatException e) {
-			JOptionPane.showConfirmDialog(null, "Este valor no es valido para realizar una conversion", "Error", JOptionPane.ERROR_MESSAGE); 
+		try { // advertimos que en las lineas de abajo puede que pueda suceder una excepcion.
+			String validar = JOptionPane.showInputDialog("Digite los grados que desea convertir"); //lepedimos al usuario el numero que desea convertir 
+			valorGrados = Integer.parseInt(validar);  // le asignamos un valor a valorGrados, realizamos un casteo de un String a int
+		}catch(NumberFormatException e) { //le decimos que clase de exception puede haber en las lineas de arriba
+			JOptionPane.showConfirmDialog(null, "Este valor no es valido para realizar una conversion", "Error", JOptionPane.ERROR_MESSAGE);
+			//le mostramos un mensaje de error al usuario
 		}
 		
 		if(valorGrados != 0) {
@@ -46,14 +66,20 @@ public class Conversor {
 		}
 	
 	}
+	
+	/**
+	 * en este metodo es donde se evalua que clase de conversion desea hacer realizar y en base a eso se realiza una 
+	 * determinada operacion.
+	 */
+	
 	private void conQuetzales() {
 		double valor= 0;  
 		double resultado; 
 		
-		try {
-			String validar = JOptionPane.showInputDialog(null, "Digita el valor a convertir: ");
-			valor = Integer.parseInt(validar);	
-		}catch(NumberFormatException e) {
+		try {//advertimos que en las lineas de abajo pueda suceder una excepcion.
+			String validar = JOptionPane.showInputDialog(null, "Digita el valor a convertir: ");//lepedimos al usuario el numero que desea convertir
+			valor = Integer.parseInt(validar);	// le asignamos un valor a valor, realizamos un casteo de un String a int
+		}catch(NumberFormatException e) { //le decimos que clase de exception puede haber en las lineas de arriba
 			JOptionPane.showMessageDialog(null, "esto no se puede utilizar para realizar una conversión", "Error", JOptionPane.ERROR_MESSAGE);
 		}
 	
@@ -101,6 +127,11 @@ public class Conversor {
 		
 		
 	}
+	
+	/**
+	 * en este metodo es donde preguntamos si el usuario quiere seguir haciendo uso del programa.
+	 */
+	
 	private void ciclo() {
 		int salida; 
 		do {
